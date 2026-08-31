@@ -1,0 +1,28 @@
+### GET request to example server
+GET http://localhost:8081/api/v1/student
+
+#### POST request to example server
+POST http://localhost:8081/api/v1/student
+Content-Type: application/json
+
+{
+    "name": "Bilal",
+    "email": "bilal@example.com",
+    "dob": "1995-01-01"
+}
+
+### post request to example server
+POST http://localhost:8081/api/v1/student
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "dob": "1990-05-15"
+}
+
+#### DELETE request to example server
+DELETE http://localhost:8081/api/v1/student/1
+
+#### PUT request to example server
+PUT http://localhost:8081/api/v1/student/2?name=Maria&email=maria@gmail.com
