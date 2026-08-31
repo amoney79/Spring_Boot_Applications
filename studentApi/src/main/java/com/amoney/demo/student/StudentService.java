@@ -37,6 +37,9 @@ public class StudentService {
 
     @Transactional
     public void updateStudent(Long studentId, String name, String email) {
+        if (studentId == null) {
+            throw new IllegalStateException("Student ID cannot be null");
+        }
         Student student = studentRepository.findById(studentId)
             .orElseThrow(() -> new IllegalStateException("Student with ID " + studentId + " does not exist"));
 

@@ -2,6 +2,7 @@ package com.amoney.demo.student;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
@@ -29,9 +30,7 @@ public class StudentConfig {
                     "alex@gmail.com",
                     LocalDate.of(2004, Month.JANUARY, 5)
             );
-            repository.saveAll(
-                List.of(mariam, alex)
-            );
+            repository.saveAll(java.util.Arrays.asList(mariam, alex));
         
             
         };
