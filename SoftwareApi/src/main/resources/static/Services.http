@@ -1,0 +1,5 @@
+### GET request to example server
+Get http://localhost:8080/
+
+###
+Get http://localhost:8080/api/v1/software-engineers
